@@ -1,0 +1,101 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* 💡 컨테이너를 가로 정렬 */
+.container {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 💡 왼쪽 폼 섹션 - 중앙 정렬 */
+.form-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* ⬅️ 전체 요소를 중앙 정렬 */
+    justify-content: center;
+}
+
+/* 제목을 가운데 정렬 */
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+/* 로고 */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* 입력 필드 전체 정렬 */
+form {
+    width: 80%; /* ⬅️ 폼 크기를 조정하여 중앙에 배치 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ⬅️ 폼 내부 요소도 가운데 정렬 */
+}
+
+/* 한 줄에 2개씩 정렬이 아니라 세로 정렬 */
+.input-group {
+    display: flex;
+    flex-direction: column; /* ⬅️ 기존 가로 정렬 제거 */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* 입력 필드 너비 100% 설정 */
+.input-group input {
+    width: 100%; /* ⬅️ 한 줄 전체를 차지하도록 변경 */
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+/* 버튼 스타일 - 전체 너비 */
+.btn {
+    width: 100%; /* ⬅️ 버튼도 가득 차게 */
+    padding: 15px;
+    background-color: #1565C0;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
+/* 💡 오른쪽 건물 이미지 */
+.image-section {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

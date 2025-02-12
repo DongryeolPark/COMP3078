@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 왼쪽 섹션 -->
+        <div class="form-section">
+            <img src="images/gbc.logo.png" alt="GBC Logo" class="logo">
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <input type="text" id="firstName" placeholder="First name" required>
+                    <input type="text" id="lastName" placeholder="Last name" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="GBC Email" required>
+                    <input type="email" id="confirmEmail" placeholder="Confirm Your Email" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </div>
+
+        <!-- 오른쪽 섹션 -->
+        <div class="image-section">
+            <img src="images/background.jpg" alt="GBC Building">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
